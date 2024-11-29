@@ -11,8 +11,8 @@ class Calculator1():
         first_process_result = self.__first_process(splitted_number)
         second_process_result = self.__second_process(splitted_number)
         calc_result = first_process_result + second_process_result + splitted_number
-        resonse = self.__format_response(calc_result)
-        return resonse
+        response = self.__format_response(calc_result)
+        return response
 
     def __validate_body(self, body: Dict) -> float:
         if "number" not in body:
