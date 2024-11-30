@@ -3,12 +3,13 @@ from .calculator_2 import Calculator2
 from src.drivers.numpy_handler import NumpyHandler
 from src.drivers.interfaces.driver_handler_interface import DriverhandlerInterface
 
+
 class MockRequest:
     def __init__(self, body: Dict) -> None:
         self.json = body
 
 
-class MockDriverHandler(DriverhandlerInterface):
+class MockDriverHandler:
     def standard_deviation(self, numbers: List[float]) -> float:
         return 3
 
